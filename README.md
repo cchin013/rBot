@@ -21,9 +21,10 @@ Simple as that!
 <p>
 You can use this bot to interact with the Twitch API in whatever manner you want(adhering to their terms of service, of course!). You can use it to handle things like !rank, !weather, !runes, !masteries, etc. You just have to change the <code>find</code> function on line 195 to incorporate what you want out of the bot. 
 For example, if you wanted the bot to respond with a link to your twitter account when a user types !twitter, you would just add this line:
-<p>
 
 if (find(buf, "!twitter"))
 {
+
   sendData("PRIVMSG #noticemeskyoriwilldie :My twitter is located at https://twitter.com/MyTwitterAccountHandle\r\n");
+  
 }
