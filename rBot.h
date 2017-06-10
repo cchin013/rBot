@@ -178,7 +178,7 @@ void rBot::sendPong(char const* buf)
                     ++tick;
                 }
                 
-                char const* returnPong = "PONG ";
+                char const* returnPong = "PONG\r\n";
 
                 if (sendData(returnPong))
                 {
