@@ -95,7 +95,7 @@ void rBot::start()
                 sendData(user);
                 break;
             case 4:
-                sendData("JOIN #noticemeskyoriwilldie\r\n"); //This line determines what channel you want the bot in
+                sendData("JOIN #YOURCHANNELNAME\r\n"); //This line determines what channel you want the bot in
                 break;
             default:
                 break;
@@ -196,7 +196,7 @@ void rBot::commands(char const* buf)
 {
     if (find(buf, "!elias"))
     {
-        sendData("PRIVMSG #noticemeskyoriwilldie :hello elias sells\r\n");
+        sendData("PRIVMSG #YOURCHANNELNAME :hello elias sells\r\n");
     }
 }
 
