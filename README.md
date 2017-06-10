@@ -1,8 +1,8 @@
 # rBot
 
------------------
+
 <h1>About this project
------------------
+
 This is a Twitch chat bot written in C++ that interacts with the Twitch API for whatever reason you may have. Currently I just use it to respond to simple commands like !hello, !motd, etc but it can be extended to do basically anything you want it to. Thanks to Tyler Allen for the initial inspiration and the initial, unpolished iteration of the program that I later optimized.
 
 -----------------
