@@ -12,6 +12,8 @@
 #include <netdb.h>
 #include <arpa/inet.h>
 #include <sys/wait.h>
+#include <fstream>
+#include <ctime>
 
 using namespace std;
 
@@ -48,6 +50,16 @@ rBot::~rBot()
 
 void rBot::start()
 {
+    time_t tp = time(0);
+    char* dt = ctime(&tp);
+    ofstream file; //file to store logs
+    //Creates a file called "file.txt" in the local directory where it stores basically everything the bot receives from the server
+    file.open("file.txt", fstream::app); //Append mode so it doesn't just overwrite everything everytime you restart the bot
+    if (file.is_open())
+    {
+    file << "-----------------------DATE AND TIME (GMT)" << endl; //Timestamps
+    file << "---------------------" << dt;
+    }
     int MAXDATASIZE = 100;
     this->success = true;
     this->port = "6667";
@@ -102,6 +114,7 @@ void rBot::start()
     //The following will deal with receiving commands from the chat
     data = recv(s,buf,MAXDATASIZE-1,0);
     buf[data] = '\0';
+    file << buf;
     cout << buf;
     commands(buf);
     
