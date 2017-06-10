@@ -26,8 +26,6 @@ For example, if you wanted the bot to respond with a link to your twitter accoun
 if (find(buf, "!twitter"))
 <p>
 {
-<p>
   sendData("PRIVMSG #noticemeskyoriwilldie :My twitter is located at https://twitter.com/MyTwitterAccountHandle\r\n");
-<p>
 }
 </code>
