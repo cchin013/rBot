@@ -30,7 +30,7 @@ For example, if you wanted the bot to respond with a link to your twitter accoun
   `}`
   
   **Known bugs**
-  * Bot sometimes disconnects after the second PONG 
+  * Bot sometimes disconnects after the second PING (FIXED BY ADDING \r\n TO THE PONG RESPONSE) 
   * Bot response is sometimes delayed or simply unresponsive to chat commands. Trying multiple times for a command usually works.
  
  
