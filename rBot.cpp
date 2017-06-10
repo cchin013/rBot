@@ -4,7 +4,9 @@ using namespace std;
 
 int main()
 {
-rBot bot = rBot("modmandrewjacksonorriot", "oauth:8mus0on1yk6c5d7k4xzh5pp48rlox6");
+
+//You can get your account's auth token here: http://twitchapps.com/tmi/
+rBot bot = rBot("PASS YOURAUTHTOKEN\r\n", "NICK YOURTWITCHUSERNAME\r\n", "USER YOURTWITCHUSERNAME\r\n");
 bot.start();
 
 return 0;
