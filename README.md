@@ -29,4 +29,15 @@ For example, if you wanted the bot to respond with a link to your twitter accoun
   
   `}`
   
+  **Known bugs**
+  * Bot sometimes disconnects after the second PONG 
+  * Bot response is sometimes delayed or simply unresponsive to chat commands. Trying multiple times for a command usually works.
+ 
+ 
+  **TO-DO LIST**
+  * Let the bot reconnect if it loses connection (probably just make a larger loop somewhere?)
+  * Allow the bot to use moderator status to moderate the chat per the broadcaster's rules
+  * Allow the bot to access the weather for a certain zipcode or state via a weather API
+  * Maybe allow the bot to join another person's channel without having to restart the bot / change the parameters?
+ 
   
