@@ -196,7 +196,7 @@ void rBot::commands(char const* buf)
 {
     if (find(buf, "!elias"))
     {
-        sendData("PRIVMSG #noticemeskyoriwilldie: hello elias sells\r\n");
+        sendData("PRIVMSG #noticemeskyoriwilldie :hello elias sells\r\n");
     }
 }
 
