@@ -139,6 +139,8 @@ bool rBot::find(char const* toLookThru, char const* toFind)
     
     for (unsigned i = 0; i < toLookLen; ++i)
     {
+        if (toLookThru[i] == toFind[0])
+        {
         bool found = true;
         for (unsigned j = 1; j < toFindLen; ++j) //This is very slow [O(n^2)]
         {                                       //TODO: Optimize this I suppose? Can maybe speed it up through markov chains?
@@ -150,6 +152,7 @@ bool rBot::find(char const* toLookThru, char const* toFind)
         if (found)
         {
             return true;
+        }
         }
     }
     return false;
