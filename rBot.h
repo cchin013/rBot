@@ -6,12 +6,12 @@
 #include <unistd.h>
 #include <errno.h>
 #include <string.h>
-#include <sys/types.h>
-#include <sys/socket.h>
+#include <sys/types.h> // These three only work on Linux I believe
+#include <sys/socket.h>// You may have to change the code 
+#include <sys/wait.h>  // to work with Winsocket to create a Windows EXE in your IDE
 #include <netinet/in.h>
 #include <netdb.h>
 #include <arpa/inet.h>
-#include <sys/wait.h>
 #include <fstream>
 #include <ctime>
 
