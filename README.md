@@ -9,7 +9,7 @@ This is a Twitch chat bot written in C++ that interacts with the Twitch API for 
 <p>
 1. <code>git clone https://github.com/cchin013/rBot.git</code>
 <p>
-2. Change the information in <code>rBot.cpp</code> on line 9. Replace YOURAUTHTOKEN with the token generated from the link in the comment above, making sure to include the "oauth" part. The two other strings are self-explanatory. Change the information in rBot.h on lines 98 and 199 to the name of the channel you want the bot to join.
+2. Change the information in <code>rBot.cpp</code> on line 9. Replace YOURAUTHTOKEN with the token generated from the link in the comment above, making sure to include the "oauth" part. The two other strings are self-explanatory. Replace '#YOURCHANNELNAME' with the channel you want the bot to join and send/respond to messages.
 <p>
 3. <code>g++ rBot.cpp</code>
 <p>
